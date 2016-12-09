@@ -22,7 +22,18 @@ public class drawMap {
 	
 	public void draw(){
 		
+		
+		System.out.println("   A B C D E F G H I J K L M N O");
 		for(int x = 0; x < height; x++){
+			int n = x+1;
+			if(n<=9){
+				System.out.print(" " + n + " ");
+			}else{
+				System.out.print(n + " ");
+			}
+			
+			
+			
 			for(int y = 0; y<width; y++){
 				System.out.print(map[x][y]);
 				System.out.print(" ");
