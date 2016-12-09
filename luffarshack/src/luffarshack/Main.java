@@ -2,7 +2,10 @@ package luffarshack;
 
 public class Main {
 	
+	drawMap draw;
+	
 	public Main(){
+		draw = new drawMap(15, 15);
 		gameLoop();
 	}
 
@@ -12,7 +15,7 @@ public class Main {
 	
 	
 	public void gameLoop(){
-		
+		draw.draw();
 	}
 
 }
