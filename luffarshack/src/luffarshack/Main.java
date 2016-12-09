@@ -15,7 +15,12 @@ public class Main {
 	
 	
 	public void gameLoop(){
-		draw.draw();
+		boolean loop = true;
+		while(loop){
+			draw.draw();
+			loop = false;
+		}
+		
 	}
 
 }
