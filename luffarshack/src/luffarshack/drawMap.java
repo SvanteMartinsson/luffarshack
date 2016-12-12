@@ -13,7 +13,6 @@ public class drawMap {
 		map = new int[width][height];
 		for(int i = 0; i < height; i++){
 			for(int x = 0; x<width; x++){
-				System.out.println(i + " " + x);
 				map[i][x] = 0;
 			}
 		}
@@ -42,6 +41,9 @@ public class drawMap {
 		}
 	}
 	
+	public void addPMoveToBoard(int x, int y){
+		map[x][y] = 1;
+	}
 	
 	
 }

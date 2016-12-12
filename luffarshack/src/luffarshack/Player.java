@@ -19,7 +19,7 @@ public class Player {
 		String line = scanner.nextLine();
 		x = Character.getNumericValue(line.charAt(1));
 		y = getYValue(line.charAt(0));
-		System.err.println(x + " " + y);
+		System.out.println(x + " " + y);
 	}
 	
 	private int getYValue(char letter){
@@ -35,11 +35,11 @@ public class Player {
 	}
 	
 	public int getX(){
-		return x;
+		return x-1;
 	}
 	
 	public int getY(){
-		return y;
+		return y-1;
 	}
 	
 }

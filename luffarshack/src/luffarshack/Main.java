@@ -21,7 +21,7 @@ public class Main {
 		while(loop){
 			draw.draw();
 			player.move();
-			loop = false;
+			draw.addPMoveToBoard(player.getX(), player.getY());
 		}
 		
 	}
