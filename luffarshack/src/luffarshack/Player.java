@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Player {
 	
-	char[] letters = "ABCDEFHIJKLMNO".toCharArray();
+	char[] letters = "ABCDEFGHIJKLMNO".toCharArray();
 	Scanner scanner = new Scanner(System.in);
 	private int x;
 	private int y;
