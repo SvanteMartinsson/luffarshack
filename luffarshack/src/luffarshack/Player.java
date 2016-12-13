@@ -17,7 +17,14 @@ public class Player {
 		System.out.println("Ditt drag: ");
 		
 		String line = scanner.nextLine();
-		x = Character.getNumericValue(line.charAt(1));
+		
+		
+		if(line.length()>2){
+			x = Character.getNumericValue(line.charAt(2))+10;
+		}else{
+			x = Character.getNumericValue(line.charAt(1));
+		}
+		
 		y = getYValue(line.charAt(0));
 		System.out.println(x + " " + y);
 	}
