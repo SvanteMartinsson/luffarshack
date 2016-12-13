@@ -45,5 +45,17 @@ public class drawMap {
 		map[x][y] = 1;
 	}
 	
+	public int[][] getMap(){
+		return map;
+	}
+	
+	public int getWidth(){
+		return width;
+	}
+	
+	public int getHeight(){
+		return height;
+	}
+	
 	
 }

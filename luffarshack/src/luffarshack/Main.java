@@ -4,10 +4,12 @@ public class Main {
 	
 	drawMap draw;
 	Player player;
+	CheckMap mapCheck;
 	
 	public Main(){
 		draw = new drawMap(15, 15);
 		player = new Player();
+		mapCheck = new CheckMap();
 		gameLoop();
 	}
 
@@ -20,8 +22,10 @@ public class Main {
 		boolean loop = true;
 		while(loop){
 			draw.draw();
+			mapCheck.checkPlayer(draw.getMap(), draw.getHeight(), draw.getWidth());
 			player.move();
 			draw.addPMoveToBoard(player.getX(), player.getY());
+			mapCheck.getLoop();
 		}
 		
 	}
