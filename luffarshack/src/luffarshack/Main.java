@@ -23,9 +23,13 @@ public class Main {
 		while(loop){
 			draw.draw();
 			mapCheck.checkPlayer(draw.getMap(), draw.getHeight(), draw.getWidth());
-			player.move();
-			draw.addPMoveToBoard(player.getX(), player.getY());
-			mapCheck.getLoop();
+			loop = mapCheck.getLoop();
+			
+			if(loop){
+				player.move();
+				draw.addPMoveToBoard(player.getX(), player.getY());
+			}
+				
 		}
 		
 	}
