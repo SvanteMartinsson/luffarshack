@@ -41,8 +41,12 @@ public class drawMap {
 		}
 	}
 	
-	public void addPMoveToBoard(int x, int y){
-		map[x][y] = 1;
+	public void addPMoveToBoard(int y, int x){
+		map[y][x] = 1;
+	}
+	
+	public void addEMoveToBoard(int y, int x){
+		map[y][x] = 2;
 	}
 	
 	public int[][] getMap(){

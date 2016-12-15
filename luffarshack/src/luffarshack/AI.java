@@ -28,17 +28,26 @@ public class AI {
 	private int width;
 	private int height;
 	
+	
 	public AI(int width, int height){
 		this.width = width;
 		this.height = height;
 	}
 
-	public void aiMove(){
-		for(int x = 0; x < height; x++){
-			for(int y = 0; y<width; y++){
-
-			}
-		}
+	public void aiMove(int pX, int pY){
+		
+		
+				x = pX + 1;
+				y = pY;
+		
+	}
+	
+	public int getX(){
+		return x-1;
+	}
+	
+	public int getY(){
+		return y-1;
 	}
 
 }
