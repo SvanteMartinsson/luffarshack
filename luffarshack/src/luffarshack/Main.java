@@ -27,7 +27,7 @@ public class Main {
 			
 			if(loop){
 				player.move();
-				draw.addPMoveToBoard(player.getX(), player.getY());
+				draw.addPMoveToBoard(player.getY(), player.getX());
 			}
 				
 		}
