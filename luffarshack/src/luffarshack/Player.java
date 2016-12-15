@@ -20,12 +20,12 @@ public class Player {
 		
 		
 		if(line.length()>2){
-			x = Character.getNumericValue(line.charAt(2))+10;
+			y = Character.getNumericValue(line.charAt(2))+10;
 		}else{
-			x = Character.getNumericValue(line.charAt(1));
+			y = Character.getNumericValue(line.charAt(1));
 		}
 		
-		y = getYValue(line.charAt(0));
+		x = getYValue(line.charAt(0));
 		System.out.println(x + " " + y);
 	}
 	

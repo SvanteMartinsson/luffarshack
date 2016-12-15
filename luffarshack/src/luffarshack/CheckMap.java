@@ -9,15 +9,13 @@ public class CheckMap {
 			for(int y = 0; y<width; y++){
 				
 				
-				// Upp, ner , vänster & höger
+				// Upp, ner , vï¿½nster & hï¿½ger
 				if(x<width-2){
 					if(map[y][x] == 1 && map[y][x+1] == 1 && map[y][x+2] == 1){
 						System.out.println("Win");
 						loop = false;
 					}
-				}
-				
-				
+				}	
 				
 				if(y>1){
 					if(map[y][x] == 1 && map[y-1][x] == 1 && map[y-2][x] == 1){
@@ -25,8 +23,6 @@ public class CheckMap {
 						loop = false;
 					}
 				}
-				
-				
 				
 				// Diagonaler
 				
