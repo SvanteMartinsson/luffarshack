@@ -11,14 +11,14 @@ public class CheckMap {
 				
 				// Upp, ner , v�nster & h�ger
 				if(x<width-2){
-					if(map[y][x] == 1 && map[y][x+1] == 1 && map[y][x+2] == 1){
+					if(map[y][x] == 1 && map[y][x+1] == 1 && map[y][x+2] == 1 && map[y][x+3] == 1 && map[y][x+4] == 1){
 						System.out.println("Win");
 						loop = false;
 					}
 				}	
 				
-				if(y>1){
-					if(map[y][x] == 1 && map[y-1][x] == 1 && map[y-2][x] == 1){
+				if(y>3){
+					if(map[y][x] == 1 && map[y-1][x] == 1 && map[y-2][x] == 1 && map[y-3][x] == 1 && map[y-4][x] == 1){
 						System.out.println("Win");
 						loop = false;
 					}
@@ -26,15 +26,15 @@ public class CheckMap {
 				
 				// Diagonaler
 				
-				if(x>1 && y>1){
-					if(map[y][x] == 1 && map[y-1][x-1] == 1 && map[y-2][x-2] == 1){
+				if(x>3 && y>3){
+					if(map[y][x] == 1 && map[y-1][x-1] == 1 && map[y-2][x-2] == 1 && map[y-3][x-3] == 1 && map[y-4][x-4] == 1){
 						System.out.println("Win");
 						loop = false;
 					}
 				}
 				
 				if(x<width-2 && y>1){
-					if(map[y][x] == 1 && map[y-1][x+1] == 1 && map[y-2][x+2] == 1){
+					if(map[y][x] == 1 && map[y-1][x+1] == 1 && map[y-2][x+2] == 1 && map[y-3][x+3] == 1 && map[y-4][x+4] == 1){
 						System.out.println("Win");
 						loop = false;
 					}
