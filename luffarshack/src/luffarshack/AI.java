@@ -36,7 +36,6 @@ public class AI {
 
 	public void aiMove(int pX, int pY){
 		
-		
 				x = pX + 1;
 				y = pY;
 		
