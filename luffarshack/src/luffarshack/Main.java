@@ -7,6 +7,8 @@ public class Main {
 	CheckMap mapCheck;
 	AI enemy;
 	
+	
+	
 	public Main(){
 		draw = new drawMap(15, 15);
 		player = new Player();
