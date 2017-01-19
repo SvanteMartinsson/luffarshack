@@ -13,7 +13,7 @@ public class Main {
 		draw = new drawMap(15, 15);
 		player = new Player();
 		mapCheck = new CheckMap();
-		enemy = new AI(draw.getWidth(), draw.getHeight());
+		enemy = new AI(draw.getWidth(), draw.getHeight(), draw.getMap());
 		gameLoop();
 	}
 
