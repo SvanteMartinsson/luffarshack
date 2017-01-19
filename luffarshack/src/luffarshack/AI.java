@@ -48,53 +48,14 @@ public class AI {
 		
 	}
 	
-	public int checkIfPlace(int x, int y, int width, int height, int map[][]){
+	public void checkIfPlace(int x, int y, int width, int height, int map[][]){
 		
 		int sumToRightEdge = width-x;
 		int sumToLeftEdge = x;
 		int sumToTop = y;
 		int sumToBot = height-y;
 		
-		if(sumToTop>1 && sumToBot>1 && sumToRightEdge>1 && sumToLeftEdge>1){
 		
-		if(map[y+1][x] == 1 && sumToTop>1){
-			this.x = x;
-			this.y = y-1;
-			return 1;
-		}else if(map[y-1][x] == 1 && sumToBot>1){
-			this.x = x;
-			this.y = y-1;
-			return 2;
-		}else if(map[y][x+1] == 1 && sumToRightEdge>1){
-			this.x = x;
-			this.y = y-1;
-			return 3;
-		}else if(map[y][x-1] == 1 && sumToLeftEdge>1){
-			this.x = x;
-			this.y = y-1;
-			return 4;
-		}else if(map[y+1][x+1] == 1 && sumToTop>1 && sumToRightEdge>1){
-			this.x = x;
-			this.y = y-1;
-			return 5;
-		}else if(map[y+1][x-1] == 1 && sumToTop>1 && sumToLeftEdge>1){
-			this.x = x;
-			this.y = y-1;
-			return 6;
-		}else if(map[y-1][x-1] == 1 && sumToBot>1 && sumToLeftEdge>1){
-			this.x = x;
-			this.y = y-1;
-			return 7;
-		}else if(map[y-1][x+1] == 1 && sumToBot>1 && sumToRightEdge>1){
-			this.x = x;
-			this.y = y-1;
-			return 8;
-		}else{
-			return 0;
-		}
-		}else{
-			return 0;
-		}
 		
 	}
 	
